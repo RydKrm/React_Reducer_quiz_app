@@ -1,0 +1,30 @@
+.number-container{
+    display: inline-flex;
+}
+.wrong{
+    background-color: crimson;
+}
+
+.right{
+    background-color: greenyellow;
+    
+}
+
+.focused{
+    background-color: orange;
+
+}
+.not-visited{
+   background-color: gray;
+  
+}
+
+.btn{
+    width: 30px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
