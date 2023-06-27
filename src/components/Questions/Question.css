@@ -1,8 +1,33 @@
 .question-option{
-  width: 100px;
   height: 30px;
   border-radius: 5px;
   border-color: darkorchid;
   color: white;
   background-color: darkorchid;
+  margin: 4px 2px;
+  font-size: 20px;
+}
+
+
+
+.wrong{
+  background-color: crimson;
+}
+
+.answer{
+  background-color: mediumblue
+}
+
+.right {
+  background-color: greenyellow;
+}
+
+.btn-next{
+  font-size: 18px;
+  background-color: darkviolet;
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+  margin: 10px 20px;
+  cursor: pointer;
 }
