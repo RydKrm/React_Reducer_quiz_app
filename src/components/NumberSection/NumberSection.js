@@ -1,19 +1,15 @@
 import './NumberSection.css';
 import React from 'react';
 const NumberSection = ({allAnswer}) => {
-    console.log('AllAnswer', allAnswer);
+  //  console.log('AllAnswer', allAnswer);
     return (
       <div className="number-container">
         <div className="all-number">
-          <button className="right btn">1</button>
-          <button className="right btn">2</button>
-          <button className="not-visited btn">3</button>
-          <button className="focused btn">4</button>
-          <button className="not-visited btn">5</button>
-          <button className="not-visited btn">6</button>
-        { /* allAnswer.map((al, index) => (;
-            <button className="not-visited btn">al</button>;
-        )); */}
+          
+        {  allAnswer.map((al, index) => (
+            <button key={index} className={`btn  ${al===0 ? "not-visited": ""} ${al===1 ? "right":""} ${al===2?"wrong":""} `}>{index+1}</button>
+        ))
+        }
         </div>
       </div>
     );
